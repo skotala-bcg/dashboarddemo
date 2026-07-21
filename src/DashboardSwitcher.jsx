@@ -2,7 +2,6 @@ import { useEffect, useRef, useState } from "react";
 
 const OPTIONS = [
   { key: "exec", label: "Exec Dashboard" },
-  { key: "jira-health", label: "Jira Health Dashboard" },
 ];
 
 // Title-level dropdown that switches between the dashboards. Closes on
