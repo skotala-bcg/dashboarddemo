@@ -1,6 +1,7 @@
 import { useState } from "react";
 import ExecDashboard from "./ExecDashboard.jsx";
 import DashboardSwitcher from "./DashboardSwitcher.jsx";
+import JiraHealthDashboard from "./jiraHealth/JiraHealthDashboard.jsx";
 
 export default function App() {
   const [current, setCurrent] = useState("exec");
@@ -9,7 +10,7 @@ export default function App() {
       <header style={{ background: "#fff", borderBottom: "1px solid #E5E7EB", padding: "12px 24px" }}>
         <DashboardSwitcher current={current} onChange={setCurrent} />
       </header>
-      <ExecDashboard />
+      {current === "exec" ? <ExecDashboard /> : <JiraHealthDashboard />}
     </div>
   );
 }
