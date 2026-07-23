@@ -112,7 +112,7 @@ export default function JiraHealthDashboard() {
       <div style={{ background: C.navy, color: "#fff", padding: "16px 24px" }}>
         <div className="flex items-center justify-between flex-wrap gap-2">
           <div>
-            <div style={{ fontSize: 20, fontWeight: 800, letterSpacing: -0.3 }}>MA PDLC — Jira Health Dashboard</div>
+            <div style={{ fontSize: 20, fontWeight: 800, letterSpacing: -0.3 }}>Test - Jira Health</div>
             <div style={{ fontSize: 12.5, opacity: 0.7 }}>Is work planned on time & flowing? · Who needs attention? · Can we trust the data? · Is hygiene improving?</div>
           </div>
           <div style={{ fontSize: 12, opacity: 0.8, textAlign: "right" }}>Snapshot · {fmt(SNAPSHOT)}<br /><span style={{ opacity: 0.6 }}>illustrative · all metrics auto-pulled from Jira</span></div>
